@@ -1,6 +1,6 @@
 # 🍽️ MealPing - Smart Mess Reminder & Tracker
 
-![MealPing Banner](https://via.placeholder.com/1200x400/1e1e2f/ffffff?text=MealPing+-+Never+Miss+a+Meal+Again)
+![MealPing Banner](./assets/banner.png)
 
 ## 📖 The Problem
 For students living away from home who rely on external mess services or tiffins, keeping track of daily meals is a major hassle. Traditionally, students and mess owners write down meal records in physical notebooks. Furthermore, with busy study schedules, students often forget to eat on time or forget to cancel their tiffins when they are eating out, leading to food waste and financial loss.
