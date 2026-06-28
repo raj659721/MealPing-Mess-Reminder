@@ -1,0 +1,102 @@
+2026-05-23T13:14:27.047577207Z ==> Cloning from https://github.com/raj659721/Mess-Reminder
+2026-05-23T13:14:27.96756943Z ==> Checking out commit 3678b1d6a2dc491aae8bdd7eccaad0933e3bbb0b in branch main
+2026-05-23T13:14:29.161302593Z #1 [internal] load build definition from Dockerfile
+2026-05-23T13:14:29.161335745Z #1 DONE 0.0s
+2026-05-23T13:14:29.357407533Z 
+2026-05-23T13:14:29.357434944Z #1 [internal] load build definition from Dockerfile
+2026-05-23T13:14:29.357439394Z #1 transferring dockerfile: 528B done
+2026-05-23T13:14:29.357442204Z #1 DONE 0.0s
+2026-05-23T13:14:29.357444715Z 
+2026-05-23T13:14:29.357447325Z #2 [internal] load metadata for docker.io/library/node:24-slim
+2026-05-23T13:14:30.585649004Z #2 ...
+2026-05-23T13:14:30.585670765Z 
+2026-05-23T13:14:30.585677935Z #3 [auth] library/node:pull render-prod/docker-mirror-repository/library/node:pull token for us-west1-docker.pkg.dev
+2026-05-23T13:14:30.585685155Z #3 DONE 0.0s
+2026-05-23T13:14:30.735882571Z 
+2026-05-23T13:14:30.735908922Z #2 [internal] load metadata for docker.io/library/node:24-slim
+2026-05-23T13:14:35.889791323Z #2 DONE 6.7s
+2026-05-23T13:14:36.100891702Z 
+2026-05-23T13:14:36.100931014Z #4 [internal] load .dockerignore
+2026-05-23T13:14:36.100937174Z #4 transferring context: 155B done
+2026-05-23T13:14:36.100941775Z #4 DONE 0.0s
+2026-05-23T13:14:36.100946025Z 
+2026-05-23T13:14:36.100950885Z #5 [builder 1/6] FROM docker.io/library/node:24-slim@sha256:242549cd46785b480c832479a730f4f2a20865d61ea2e404fdb2a5c3d3b73ecf
+2026-05-23T13:14:36.100955475Z #5 resolve docker.io/library/node:24-slim@sha256:242549cd46785b480c832479a730f4f2a20865d61ea2e404fdb2a5c3d3b73ecf 0.0s done
+2026-05-23T13:14:37.194008161Z #5 ...
+2026-05-23T13:14:37.194025122Z 
+2026-05-23T13:14:37.194029582Z #6 [internal] load build context
+2026-05-23T13:14:37.194035562Z #6 transferring context: 51.27kB done
+2026-05-23T13:14:37.194038843Z #6 DONE 1.2s
+2026-05-23T13:14:37.344354494Z 
+2026-05-23T13:14:37.370122698Z #5 [builder 1/6] FROM docker.io/library/node:24-slim@sha256:242549cd46785b480c832479a730f4f2a20865d61ea2e404fdb2a5c3d3b73ecf
+2026-05-23T13:14:38.791942881Z #5 DONE 2.9s
+2026-05-23T13:14:38.96512308Z 
+2026-05-23T13:14:38.965151332Z #5 [builder 1/6] FROM docker.io/library/node:24-slim@sha256:242549cd46785b480c832479a730f4f2a20865d61ea2e404fdb2a5c3d3b73ecf
+2026-05-23T13:14:43.770530018Z #5 extracting sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531
+2026-05-23T13:14:44.521226029Z #5 extracting sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531 0.7s done
+2026-05-23T13:14:44.521241989Z #5 extracting sha256:9bea510bd805f72c63e2d093c23fca1da9b02127c4849c121b6117a45d4d2ba7
+2026-05-23T13:14:44.881988435Z #5 extracting sha256:9bea510bd805f72c63e2d093c23fca1da9b02127c4849c121b6117a45d4d2ba7 0.2s done
+2026-05-23T13:14:44.882009496Z #5 extracting sha256:e008f534e95cab9dfc584b72c1beb5ccd5b4e7b6b73973a6fd6791f0d8e2ac29
+2026-05-23T13:14:46.181729147Z #5 extracting sha256:e008f534e95cab9dfc584b72c1beb5ccd5b4e7b6b73973a6fd6791f0d8e2ac29 1.4s done
+2026-05-23T13:14:46.181753898Z #5 extracting sha256:b2b95943836ce3dea08d21af828b011a0645bdca70cd53536131ccd295ef3def
+2026-05-23T13:14:46.432769468Z #5 extracting sha256:b2b95943836ce3dea08d21af828b011a0645bdca70cd53536131ccd295ef3def 0.3s done
+2026-05-23T13:14:46.4328013Z #5 DONE 10.5s
+2026-05-23T13:14:46.581472588Z 
+2026-05-23T13:14:46.581495059Z #5 [builder 1/6] FROM docker.io/library/node:24-slim@sha256:242549cd46785b480c832479a730f4f2a20865d61ea2e404fdb2a5c3d3b73ecf
+2026-05-23T13:14:46.581500239Z #5 extracting sha256:06d464f614a98416f8f326dcd40292b0a96bf6a56a6fba9e2f98ed770cdacf11 0.1s done
+2026-05-23T13:14:46.581504229Z #5 DONE 10.6s
+2026-05-23T13:14:46.70179846Z 
+2026-05-23T13:14:46.701822241Z #7 [builder 2/6] WORKDIR /app
+2026-05-23T13:14:46.701829432Z #7 DONE 0.1s
+2026-05-23T13:14:46.701835162Z 
+2026-05-23T13:14:46.701855813Z #8 [builder 3/6] COPY package.json ./
+2026-05-23T13:14:46.701859913Z #8 DONE 0.0s
+2026-05-23T13:14:46.854584656Z 
+2026-05-23T13:14:46.854601887Z #9 [builder 4/6] RUN npm install --include=dev --ignore-scripts
+2026-05-23T13:15:09.160085153Z #9 22.46 npm error code ERESOLVE
+2026-05-23T13:15:09.315725703Z #9 22.46 npm error ERESOLVE unable to resolve dependency tree
+2026-05-23T13:15:09.315747304Z #9 22.46 npm error
+2026-05-23T13:15:09.315751745Z #9 22.46 npm error While resolving: @workspace/api-server@0.0.0
+2026-05-23T13:15:09.315757585Z #9 22.46 npm error Found: esbuild@0.27.3
+2026-05-23T13:15:09.315761625Z #9 22.46 npm error node_modules/esbuild
+2026-05-23T13:15:09.315765256Z #9 22.46 npm error   dev esbuild@"0.27.3" from the root project
+2026-05-23T13:15:09.315769436Z #9 22.46 npm error
+2026-05-23T13:15:09.315773126Z #9 22.46 npm error Could not resolve dependency:
+2026-05-23T13:15:09.315778246Z #9 22.46 npm error peer esbuild@">=0.25.0 <=0.25.8" from esbuild-plugin-pino@2.3.3
+2026-05-23T13:15:09.315782246Z #9 22.46 npm error node_modules/esbuild-plugin-pino
+2026-05-23T13:15:09.315787057Z #9 22.46 npm error   dev esbuild-plugin-pino@"^2.3.3" from the root project
+2026-05-23T13:15:09.315790767Z #9 22.46 npm error
+2026-05-23T13:15:09.315796157Z #9 22.46 npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+2026-05-23T13:15:09.315800057Z #9 22.46 npm error
+2026-05-23T13:15:09.315803778Z #9 22.46 npm error
+2026-05-23T13:15:09.315807428Z #9 22.46 npm error For a full report see:
+2026-05-23T13:15:09.315811468Z #9 22.46 npm error /root/.npm/_logs/2026-05-23T13_14_46_853Z-eresolve-report.txt
+2026-05-23T13:15:09.315815188Z #9 22.46 npm notice
+2026-05-23T13:15:09.315827079Z #9 22.46 npm notice New minor version of npm available! 11.13.0 -> 11.15.0
+2026-05-23T13:15:09.315839919Z #9 22.46 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.15.0
+2026-05-23T13:15:09.31584701Z #9 22.46 npm notice To update run: npm install -g npm@11.15.0
+2026-05-23T13:15:09.31585379Z #9 22.46 npm notice
+2026-05-23T13:15:09.31585861Z #9 22.46 npm error A complete log of this run can be found in: /root/.npm/_logs/2026-05-23T13_14_46_853Z-debug-0.log
+2026-05-23T13:15:10.184483213Z #9 ERROR: process "/bin/sh -c npm install --include=dev --ignore-scripts" did not complete successfully: exit code: 1
+2026-05-23T13:15:10.247247191Z ------
+2026-05-23T13:15:10.247259121Z  > [builder 4/6] RUN npm install --include=dev --ignore-scripts:
+2026-05-23T13:15:10.247262842Z 22.46 npm error
+2026-05-23T13:15:10.247266052Z 22.46 npm error
+2026-05-23T13:15:10.247269502Z 22.46 npm error For a full report see:
+2026-05-23T13:15:10.247273172Z 22.46 npm error /root/.npm/_logs/2026-05-23T13_14_46_853Z-eresolve-report.txt
+2026-05-23T13:15:10.247276242Z 22.46 npm notice
+2026-05-23T13:15:10.247279312Z 22.46 npm notice New minor version of npm available! 11.13.0 -> 11.15.0
+2026-05-23T13:15:10.247282463Z 22.46 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.15.0
+2026-05-23T13:15:10.247285663Z 22.46 npm notice To update run: npm install -g npm@11.15.0
+2026-05-23T13:15:10.247288693Z 22.46 npm notice
+2026-05-23T13:15:10.247292143Z 22.46 npm error A complete log of this run can be found in: /root/.npm/_logs/2026-05-23T13_14_46_853Z-debug-0.log
+2026-05-23T13:15:10.247295183Z ------
+2026-05-23T13:15:10.248046911Z Dockerfile:9
+2026-05-23T13:15:10.248063152Z --------------------
+2026-05-23T13:15:10.248067852Z    7 |     
+2026-05-23T13:15:10.248071622Z    8 |     # Install dependencies
+2026-05-23T13:15:10.248075003Z    9 | >>> RUN npm install --include=dev --ignore-scripts
+2026-05-23T13:15:10.248084873Z   10 |     
+2026-05-23T13:15:10.248087003Z   11 |     # Copy source and build
+2026-05-23T13:15:10.248088973Z --------------------
+2026-05-23T13:15:10.248091443Z error: failed to solve: process "/bin/sh -c npm install --include=dev --ignore-scripts" did not complete successfully: exit code: 1

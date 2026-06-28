@@ -1,0 +1,340 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: Mess Food & Attendance Tracking API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: entries
+    description: Daily meal/attendance entries
+  - name: settings
+    description: User settings (meal price, notifications)
+  - name: summary
+    description: Monthly summary and cost calculations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /entries:
+    get:
+      operationId: listEntries
+      tags: [entries]
+      summary: List entries for a date range
+      parameters:
+        - name: year
+          in: query
+          required: true
+          schema:
+            type: integer
+        - name: month
+          in: query
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: List of entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Entry"
+        "401":
+          description: Unauthorized
+    post:
+      operationId: upsertEntry
+      tags: [entries]
+      summary: Create or update an entry for a given date
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpsertEntryBody"
+      responses:
+        "200":
+          description: Created or updated entry
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Entry"
+        "401":
+          description: Unauthorized
+
+  /entries/today:
+    get:
+      operationId: getTodayEntry
+      tags: [entries]
+      summary: Get today's entry
+      responses:
+        "200":
+          description: Today's entry (or null)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TodayEntryResponse"
+        "401":
+          description: Unauthorized
+
+  /entries/{date}:
+    get:
+      operationId: getEntry
+      tags: [entries]
+      summary: Get entry for a specific date (YYYY-MM-DD)
+      parameters:
+        - name: date
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Entry for date
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TodayEntryResponse"
+        "401":
+          description: Unauthorized
+
+  /summary:
+    get:
+      operationId: getMonthlySummary
+      tags: [summary]
+      summary: Get monthly summary with cost calculation
+      parameters:
+        - name: year
+          in: query
+          required: true
+          schema:
+            type: integer
+        - name: month
+          in: query
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Monthly summary
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MonthlySummary"
+        "401":
+          description: Unauthorized
+
+  /settings:
+    get:
+      operationId: getSettings
+      tags: [settings]
+      summary: Get user settings
+      responses:
+        "200":
+          description: User settings
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserSettings"
+        "401":
+          description: Unauthorized
+    put:
+      operationId: updateSettings
+      tags: [settings]
+      summary: Update user settings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateSettingsBody"
+      responses:
+        "200":
+          description: Updated settings
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserSettings"
+        "401":
+          description: Unauthorized
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    Entry:
+      type: object
+      properties:
+        id:
+          type: integer
+        userId:
+          type: string
+        date:
+          type: string
+          description: Date in YYYY-MM-DD format
+        lunchTaken:
+          type: boolean
+        dinnerTaken:
+          type: boolean
+        lunchPresent:
+          type: boolean
+        dinnerPresent:
+          type: boolean
+        notes:
+          type: string
+          nullable: true
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+      required:
+        - id
+        - userId
+        - date
+        - lunchTaken
+        - dinnerTaken
+        - lunchPresent
+        - dinnerPresent
+        - createdAt
+        - updatedAt
+
+    TodayEntryResponse:
+      type: object
+      properties:
+        entry:
+          nullable: true
+          oneOf:
+            - $ref: "#/components/schemas/Entry"
+            - type: "null"
+      required:
+        - entry
+
+    UpsertEntryBody:
+      type: object
+      properties:
+        date:
+          type: string
+          description: Date in YYYY-MM-DD format
+        lunchTaken:
+          type: boolean
+        dinnerTaken:
+          type: boolean
+        lunchPresent:
+          type: boolean
+        dinnerPresent:
+          type: boolean
+        notes:
+          type: string
+          nullable: true
+      required:
+        - date
+        - lunchTaken
+        - dinnerTaken
+        - lunchPresent
+        - dinnerPresent
+
+    MonthlySummary:
+      type: object
+      properties:
+        year:
+          type: integer
+        month:
+          type: integer
+        totalDays:
+          type: integer
+        daysPresent:
+          type: integer
+        daysAbsent:
+          type: integer
+        totalLunchTaken:
+          type: integer
+        totalDinnerTaken:
+          type: integer
+        totalMealsTaken:
+          type: integer
+        totalLunchPresent:
+          type: integer
+        totalDinnerPresent:
+          type: integer
+        mealCostPerMeal:
+          type: number
+        totalCost:
+          type: number
+        attendanceRate:
+          type: number
+      required:
+        - year
+        - month
+        - totalDays
+        - daysPresent
+        - daysAbsent
+        - totalLunchTaken
+        - totalDinnerTaken
+        - totalMealsTaken
+        - totalLunchPresent
+        - totalDinnerPresent
+        - mealCostPerMeal
+        - totalCost
+        - attendanceRate
+
+    UserSettings:
+      type: object
+      properties:
+        id:
+          type: integer
+        userId:
+          type: string
+        mealCostPerMeal:
+          type: number
+          description: Cost per meal in the user's currency
+        lunchReminderEnabled:
+          type: boolean
+        dinnerReminderEnabled:
+          type: boolean
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+      required:
+        - id
+        - userId
+        - mealCostPerMeal
+        - lunchReminderEnabled
+        - dinnerReminderEnabled
+        - createdAt
+        - updatedAt
+
+    UpdateSettingsBody:
+      type: object
+      properties:
+        mealCostPerMeal:
+          type: number
+        lunchReminderEnabled:
+          type: boolean
+        dinnerReminderEnabled:
+          type: boolean
+      required:
+        - mealCostPerMeal
+        - lunchReminderEnabled
+        - dinnerReminderEnabled

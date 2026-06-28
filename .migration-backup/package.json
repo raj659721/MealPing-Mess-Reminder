@@ -1,0 +1,27 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "node -e \"const fs = require('fs'); ['package-lock.json', 'yarn.lock'].forEach(file => { try { fs.unlinkSync(file) } catch {} });\"",
+    "dev": "concurrently \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "cross-env NODE_ENV=development npm --workspace=@workspace/api-server run dev",
+    "dev:web": "cross-env PORT=5173 npm --workspace=@workspace/mess-tracker run dev",
+    "build": "npm run typecheck && npm run build:workspaces",
+    "build:vercel": "pnpm --filter @workspace/mess-tracker run build",
+    "build:workspaces": "npm --workspaces run build",
+    "typecheck:libs": "tsc --build",
+    "typecheck": "npm run typecheck:libs && npm --workspaces run typecheck --if-present"
+  },
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.2"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.105.1"
+  }
+}

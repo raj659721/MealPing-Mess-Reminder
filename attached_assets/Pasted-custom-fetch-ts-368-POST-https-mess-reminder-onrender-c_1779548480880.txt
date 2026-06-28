@@ -1,0 +1,276 @@
+custom-fetch.ts:368  POST https://mess-reminder.onrender.com/api/api/entries 404 (Not Found)
+(anonymous) @ custom-fetch.ts:368
+await in (anonymous)
+(anonymous) @ api.ts:220
+(anonymous) @ api.ts:250
+fn @ @tanstack_react-query.js?v=01735766:2052
+run @ @tanstack_react-query.js?v=01735766:844
+start @ @tanstack_react-query.js?v=01735766:886
+execute @ @tanstack_react-query.js?v=01735766:2093
+await in execute
+mutate @ @tanstack_react-query.js?v=01735766:2429
+(anonymous) @ dashboard.tsx:214
+(anonymous) @ dashboard.tsx:375
+executeDispatch @ react-dom_client.js?v=01735766:11736
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+processDispatchQueue @ react-dom_client.js?v=01735766:11772
+(anonymous) @ react-dom_client.js?v=01735766:12182
+batchedUpdates$1 @ react-dom_client.js?v=01735766:2628
+dispatchEventForPluginEventSystem @ react-dom_client.js?v=01735766:11877
+dispatchEvent @ react-dom_client.js?v=01735766:14792
+dispatchDiscreteEvent @ react-dom_client.js?v=01735766:14773
+<button>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+MealButton @ dashboard.tsx:374
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<MealButton>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+TodayCard @ dashboard.tsx:470
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<TodayCard>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+(anonymous) @ dashboard.tsx:1020
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<DashboardPage>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+ProtectedRoute @ App.tsx:502
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<ProtectedRoute>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+(anonymous) @ App.tsx:550
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<component>
+exports.createElement @ chunk-KC53NVYV.js?v=01735766:773
+h_route @ wouter.js?v=01735766:277
+Route @ wouter.js?v=01735766:312
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<Route>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+AppRoutes @ App.tsx:550
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<AppRoutes>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+App @ App.tsx:569
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<App>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+(anonymous) @ main.tsx:11
+dashboard.tsx:34 API error: ApiError: HTTP 404 : <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /api/api/entries</pre>
+</body>
+</html>
+    at customFetch (custom-fetch.ts:377:11)
+showApiError @ dashboard.tsx:34
+(anonymous) @ dashboard.tsx:229
+await in (anonymous)
+(anonymous) @ dashboard.tsx:375
+executeDispatch @ react-dom_client.js?v=01735766:11736
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+processDispatchQueue @ react-dom_client.js?v=01735766:11772
+(anonymous) @ react-dom_client.js?v=01735766:12182
+batchedUpdates$1 @ react-dom_client.js?v=01735766:2628
+dispatchEventForPluginEventSystem @ react-dom_client.js?v=01735766:11877
+dispatchEvent @ react-dom_client.js?v=01735766:14792
+dispatchDiscreteEvent @ react-dom_client.js?v=01735766:14773
+<button>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+MealButton @ dashboard.tsx:374
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<MealButton>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+TodayCard @ dashboard.tsx:470
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<TodayCard>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+(anonymous) @ dashboard.tsx:1020
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<DashboardPage>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+ProtectedRoute @ App.tsx:502
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<ProtectedRoute>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+(anonymous) @ App.tsx:550
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<component>
+exports.createElement @ chunk-KC53NVYV.js?v=01735766:773
+h_route @ wouter.js?v=01735766:277
+Route @ wouter.js?v=01735766:312
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<Route>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+AppRoutes @ App.tsx:550
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<AppRoutes>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+App @ App.tsx:569
+react-stack-bottom-frame @ react-dom_client.js?v=01735766:17424
+renderWithHooks @ react-dom_client.js?v=01735766:4206
+updateFunctionComponent @ react-dom_client.js?v=01735766:6619
+beginWork @ react-dom_client.js?v=01735766:7654
+runWithFiberInDEV @ react-dom_client.js?v=01735766:1485
+performUnitOfWork @ react-dom_client.js?v=01735766:10868
+workLoopSync @ react-dom_client.js?v=01735766:10728
+renderRootSync @ react-dom_client.js?v=01735766:10711
+performWorkOnRoot @ react-dom_client.js?v=01735766:10330
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=01735766:11623
+performWorkUntilDeadline @ react-dom_client.js?v=01735766:36
+<App>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=01735766:250
+(anonymous) @ main.tsx:11

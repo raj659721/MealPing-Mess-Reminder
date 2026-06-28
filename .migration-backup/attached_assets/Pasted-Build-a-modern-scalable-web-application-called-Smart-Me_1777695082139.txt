@@ -1,0 +1,147 @@
+Build a modern, scalable web application called "Smart Mess Manager".
+
+🔹 Objective:
+A system to track daily meals (Lunch & Dinner), attendance, cost calculation, analytics, and notifications for mess users.
+
+-----------------------------------
+
+🔹 1. Authentication:
+- Email/password login & signup
+- Each user has personal dashboard
+
+-----------------------------------
+
+🔹 2. Core Features:
+- Mark daily meals:
+  - Lunch
+  - Dinner
+- Prevent duplicate entries for same day/time
+- Mark attendance automatically when meal is marked
+- Store all data date-wise in database
+
+-----------------------------------
+
+🔹 3. Dashboard UI:
+- Clean, minimal design (white, black, grey)
+- Mobile responsive
+- Sections:
+  - Today’s status (Lunch/Dinner buttons)
+  - Monthly summary card
+  - Weekly summary
+  - Calendar view
+
+-----------------------------------
+
+🔹 4. Calendar View:
+- Show all days of month
+- Color coding:
+  - Green = meal taken
+  - Red = missed
+  - Grey = no data
+
+-----------------------------------
+
+🔹 5. Cost Calculation:
+- User/Admin can set cost per meal (₹)
+- Auto calculate:
+  - Daily cost
+  - Weekly cost
+  - Monthly total bill
+
+-----------------------------------
+
+🔹 6. Analytics Dashboard:
+- Show:
+  - Total meals taken
+  - Meals skipped
+  - Attendance percentage
+  - Average meals per day
+- Display charts (bar/line)
+
+-----------------------------------
+
+🔹 7. Notifications:
+- Browser notifications:
+  - Lunch reminder at 12:00 PM
+  - Dinner reminder at 8:00 PM
+- If not marked:
+  - Send reminder again after 1 hour
+- Ask notification permission on first visit
+
+-----------------------------------
+
+🔹 8. Notes Feature:
+- User can add note for each day
+  Example: “Aaj bahar khaya”
+
+-----------------------------------
+
+🔹 9. Multi-User System:
+- Role-based:
+  - User
+  - Admin
+
+Admin Features:
+- View all users
+- Set meal price globally
+- Generate monthly reports for all users
+
+-----------------------------------
+
+🔹 10. PDF Bill Generator:
+- Generate monthly bill
+- Include:
+  - Total meals
+  - Cost per meal
+  - Total amount
+- Download as PDF
+
+-----------------------------------
+
+🔹 11. Export Feature:
+- Export data as CSV
+
+-----------------------------------
+
+🔹 12. Smart Features:
+- Show insights:
+  - “You skipped X meals this week”
+  - “Your average cost is ₹X/day”
+
+-----------------------------------
+
+🔹 13. UI Enhancements:
+- Dark mode toggle
+- Smooth animations
+- Card-based layout
+
+-----------------------------------
+
+🔹 14. Tech Stack:
+- Frontend: React + Tailwind CSS
+- Backend: Firebase or Supabase
+- Database: store users, meals, attendance, notes
+- Charts: Chart.js or Recharts
+
+-----------------------------------
+
+🔹 15. Advanced (optional but include structure):
+- QR code scan for attendance
+- Location-based marking (GPS check)
+- PWA support (installable app)
+
+-----------------------------------
+
+🔹 16. Code Requirements:
+- Clean and modular code
+- Use reusable components
+- Proper folder structure
+- Comment important logic
+- Ready to run on Replit
+
+-----------------------------------
+
+🔹 17. Performance:
+- Fast loading
+- Optimized queries
+- Handle multiple users efficiently

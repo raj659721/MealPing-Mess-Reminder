@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: mess-manager-api
+    runtime: docker
+    rootDir: artifacts/api-server
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8080
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: SUPABASE_DB_PASSWORD
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ADMIN_USER_IDS
+        sync: false
+      - key: CORS_ORIGIN
+        value: "*"

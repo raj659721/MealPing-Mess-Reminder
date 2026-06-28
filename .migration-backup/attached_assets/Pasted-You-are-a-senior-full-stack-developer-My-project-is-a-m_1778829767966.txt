@@ -1,0 +1,79 @@
+You are a senior full-stack developer.
+
+My project is a mess management system. 
+Analyze the complete project and automatically fix all errors so the project runs correctly in VS Code and can deploy successfully on Vercel.
+
+MAIN TASKS:
+
+1. Replace OpenAI API with Groq API
+- Remove all OpenAI dependencies and code.
+- Install and configure Groq SDK/API properly.
+- Use environment variable:
+  GROQ_API_KEY=
+- Create reusable AI service file.
+- Update all backend API routes using OpenAI to Groq.
+- Use fast and free Groq models like:
+  llama3-70b-8192
+  mixtral-8x7b-32768
+- Add proper error handling if API key is missing.
+
+2. Fix Entire Project Errors
+- Scan all frontend and backend files.
+- Fix import errors.
+- Fix dependency issues.
+- Remove unused files and broken code.
+- Fix TypeScript/JavaScript errors.
+- Ensure npm install works without errors.
+- Ensure npm run dev works successfully.
+
+3. Make Project Vercel Ready
+- Configure project structure properly for Vercel deployment.
+- Add correct:
+  vercel.json
+  package.json
+  build scripts
+- Ensure production build works.
+- Fix all path issues.
+- Make frontend and backend deploy correctly on Vercel.
+
+4. Database Stability
+- Do NOT change database structure.
+- Keep existing database connection.
+- Make database work on every device without manual changes.
+- Use environment variables correctly.
+- Ensure database connection is stable in production.
+
+5. Cross Device Compatibility
+- Make website responsive on:
+  mobile
+  tablet
+  laptop
+- Fix UI breaking issues.
+- Ensure app runs on any device/browser.
+
+6. Security and Cleanup
+- Move all secret keys to .env.
+- Create .env.example
+- Remove hardcoded secrets.
+- Add proper validation and error messages.
+
+7. Performance Optimization
+- Optimize loading speed.
+- Remove unnecessary packages.
+- Use only legal and safe npm packages compatible with Vercel.
+- Update outdated dependencies.
+
+8. Final Output
+After fixing everything:
+- Show final clean folder structure.
+- Show all installed packages.
+- Show commands to run locally.
+- Show exact Vercel deployment steps.
+- Generate deployment-ready code only.
+
+IMPORTANT:
+- Do not break existing features.
+- Keep UI modern and clean.
+- Make code production-ready.
+- Automatically fix all detected issues.
+- Ensure zero build errors.
